@@ -18,11 +18,11 @@ jobs:
        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       
     - name: Build the new release :latest
-      run: docker build -t ferrythom/orsys-ccb:latest .
+      run: docker build -t ferrythom/que-vous-voulez:latest .
 
     - name: Push to docker hub :latest
       uses: actions-hub/docker@master
       
       with:
-       args: push ferrythom/orsys-ccb:latest
+       args: push ferrythom/que-vous-voulez:latest
  
